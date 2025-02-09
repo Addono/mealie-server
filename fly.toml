@@ -1,0 +1,45 @@
+app = 'mealie-addono'
+
+primary_region = 'ams'
+kill_signal = 'SIGINT'
+kill_timeout = '5s'
+swap_size_mb = 512
+
+[build]
+  image = 'ghcr.io/mealie-recipes/mealie:v2.6.0'
+
+[env]
+  ALLOW_SIGNUP = 'false'
+  BASE_URL = 'https://recipes.aknapen.nl'
+  MAX_WORKERS = '1'
+  PGID = '1000'
+  PUID = '1000'
+  TZ = 'Europe/Berlin'
+  WEB_CONCURRENCY = '1'
+  SMTP_HOST = "smtp.mailersend.net"
+  SMTP_PORT = "587"
+  SMTP_FROM_NAME = "Mealie"
+  SMTP_FROM_EMAIL = "MS_vVPOCs@trial-z3m5jgr6wkmgdpyo.mlsender.net"
+  SMTP_USER = "MS_vVPOCs@trial-z3m5jgr6wkmgdpyo.mlsender.net"
+  SMTP_AUTH_STRATEGY = "TLS"
+  # SMTP_PASSWORD = "SECRET" ## fly secrets set SMTP_PASSWORD="your-password-here"
+
+[[mounts]]
+  source = 'mealie'
+  destination = '/app/data'
+  auto_extend_size_threshold = 80
+  auto_extend_size_increment = "1GB"
+  auto_extend_size_limit = "3GB"
+
+[http_service]
+  internal_port = 9000
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '512m'
+  cpu_kind = 'shared'
+  cpus = 1
