@@ -20,8 +20,8 @@ swap_size_mb = 512
   SMTP_HOST = "smtp.mailersend.net"
   SMTP_PORT = "587"
   SMTP_FROM_NAME = "Mealie"
-  SMTP_FROM_EMAIL = "MS_vVPOCs@trial-z3m5jgr6wkmgdpyo.mlsender.net"
-  SMTP_USER = "MS_vVPOCs@trial-z3m5jgr6wkmgdpyo.mlsender.net"
+  # SMTP_FROM_EMAIL = "SECRET" ## fly secrets set SMTP_FROM_EMAIL="some-email-here"
+  # SMTP_USER = "SECRET" ## fly secrets set SMTP_USER="some-user-here"
   SMTP_AUTH_STRATEGY = "TLS"
   # SMTP_PASSWORD = "SECRET" ## fly secrets set SMTP_PASSWORD="your-password-here"
 
