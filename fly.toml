@@ -25,6 +25,11 @@ swap_size_mb = 512
   SMTP_AUTH_STRATEGY = "TLS"
   # SMTP_PASSWORD = "SECRET" ## fly secrets set SMTP_PASSWORD="your-password-here"
 
+  # OpenAI configuration - Targetting Gemini 2.0
+  OPENAI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
+  OPENAI_MODEL = "gemini-2.0-flash-thinking-exp-01-21"
+  # OPENAI_API_KEY = "SECRET" ## fly secrets set OPENAI_API_KEY="your-key-here"
+
 [[mounts]]
   source = 'mealie'
   destination = '/app/data'
