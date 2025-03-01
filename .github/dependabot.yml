@@ -11,4 +11,15 @@ updates:
       - "addono"
     commit-message:
       prefix: "feat(deps):"
-    
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "GitHub Actions"
+    assignees:
+      - "addono"
+    commit-message:
+      prefix: "ci(deps):"
+      
