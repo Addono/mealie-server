@@ -5,7 +5,7 @@ This repository contains the configuration for running a [Mealie](https://hay-ko
 ## Deployment
 
 1. Install the [Fly.io CLI](https://fly.io/docs/hands-on/install-flyctl/)
-2. Clone this repository
+2. Fork and clone this repository
 3. Set up your SMTP password:
    ```bash
    fly secrets set SMTP_PASSWORD="your-password-here"
