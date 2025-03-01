@@ -6,7 +6,9 @@ kill_timeout = '5s'
 swap_size_mb = 512
 
 [build]
-  image = 'ghcr.io/mealie-recipes/mealie:v2.7.1'
+  # Use external Dockerfile, such that Dependatabot can be used for version-bumps
+  dockerfile = "Dockerfile"
+
 
 [env]
   ALLOW_SIGNUP = 'false'
