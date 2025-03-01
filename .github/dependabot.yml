@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "docker"
+      - "dependencies"
+    assignees:
+      - "addono"
+    commit-message:
+      prefix: "feat(deps):"
+    
