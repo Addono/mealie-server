@@ -9,7 +9,6 @@ swap_size_mb = 512
   # Use external Dockerfile, such that Dependatabot can be used for version-bumps
   dockerfile = "Dockerfile"
 
-
 [env]
   ALLOW_SIGNUP = 'false'
   BASE_URL = 'https://recipes.aknapen.nl'
