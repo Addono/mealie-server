@@ -7,6 +7,9 @@ repository:
   # A short description of the repository that will show up on GitHub
   description: Fly.io deployment configuration for Mealie recipe manager
 
+  # A comma-separated list of topics to set on the repository
+  topics: mealie, fly, flyio, self-hosted, recipe-manager
+
   # A URL with more information about the repository
   homepage: https://recipes.aknapen.nl
 
