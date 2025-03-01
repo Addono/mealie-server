@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - main
+    paths-ignore: # Ignore changes to non-deployment related files
+      - '**.md'
+      - .github/settings.yml'
+      - .github/dependabot.yml'
 
 jobs:
   deploy:
