@@ -51,6 +51,9 @@ labels:
   - name: dependencies
     color: 0366d6
     description: Updates to dependencies
+  - name: docker
+    color: 2088FF
+    description: Changes to Docker configuration
   - name: documentation
     color: 0075ca
     description: Improvements or additions to documentation
