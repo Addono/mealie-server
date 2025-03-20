@@ -17,6 +17,11 @@ swap_size_mb = 512
   PUID = '1000'
   TZ = 'Europe/Berlin'
   WEB_CONCURRENCY = '2'
+
+  ## Login configuration
+  TOKEN_TIME = "8760" # 1 year ## The time in hours that a login/auth token is valid
+
+  ## Email configuration
   SMTP_HOST = "smtp.mailersend.net"
   SMTP_PORT = "587"
   SMTP_FROM_NAME = "Mealie"
