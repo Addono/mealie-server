@@ -28,8 +28,8 @@ The server is configured with:
 - TLS encryption
 - MailerSend SMTP for email notifications
 - European timezone (Berlin)
-- Signup disabled
-- Base URL: https://recipes.aknapen.nl
+- Signup disabled (first user after setup creates an admin account)
+- Custom domain
 
 ## Storage
 
