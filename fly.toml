@@ -19,7 +19,7 @@ swap_size_mb = 512
   WEB_CONCURRENCY = '2'
 
   ## Login configuration
-  TOKEN_TIME = "8760" # 1 year ## The time in hours that a login/auth token is valid
+  TOKEN_TIME = "87600" # 10 years ## The time in hours that a login/auth token is valid
 
   ## Email configuration
   SMTP_HOST = "smtp.mailersend.net"
