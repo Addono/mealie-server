@@ -16,7 +16,7 @@ swap_size_mb = 512
   PGID = '1000'
   PUID = '1000'
   TZ = 'Europe/Berlin'
-  WEB_CONCURRENCY = '2'
+  UVICORN_WORKERS = '2'
 
   ## Login configuration
   TOKEN_TIME = "87600" # 10 years ## The time in hours that a login/auth token is valid
