@@ -3,7 +3,7 @@ app = 'mealie-addono'
 primary_region = 'ams'
 kill_signal = 'SIGINT'
 kill_timeout = '5s'
-swap_size_mb = 512
+swap_size_mb = 1024
 
 [build]
   # Use external Dockerfile, such that Dependatabot can be used for version-bumps
