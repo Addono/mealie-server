@@ -1,1 +1,1 @@
-FROM ghcr.io/mealie-recipes/mealie:v3.17.0
+FROM ghcr.io/mealie-recipes/mealie:v3.18.0
